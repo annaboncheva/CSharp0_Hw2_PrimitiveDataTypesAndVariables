@@ -9,7 +9,8 @@ class PrintASCII
         Console.OutputEncoding = Encoding.UTF8;
         for (int i = 0; i <= 255; i++)
         {
-            Console.WriteLine();
+            char symbol = (char)i;
+            Console.WriteLine("{0}\t{1}", i, symbol);
         }
     }
 }
